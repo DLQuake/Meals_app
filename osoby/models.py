@@ -1,5 +1,6 @@
 from datetime import datetime
 from django.db import models
+from django.core.validators import RegexValidator
 
 # Create your models here.
 class Osoba(models.Model):
@@ -21,9 +22,17 @@ class Osoba(models.Model):
     nazwisko = models.CharField(max_length=200)
     miesiac_urodzenia  = models.IntegerField(choices=Miesiace.choices, default=Miesiace.choices[0])
     data_dodania = models.DateField(default = datetime.now)
+    kraj = models.ForeignKey('Druzyna', on_delete=models.CASCADE, null=True)
 
     class Meta:
-        ordering = ["nazwisko"]
+        ordering = ['nazwisko']
 
-def __str__ (self):
-    return self.list_display
+    def __str__ (self):
+        return self.imie + ' ' + self.nazwisko
+
+class Druzyna(models.Model):
+    nazwa = models.CharField(max_length=255)
+    kraj = models.CharField(max_length=2, validators=[RegexValidator('^[A-Z]', 'Tylko duże litery')])
+
+    def __str__(self):
+        return self.nazwa + ' ('+self.kraj+')'
