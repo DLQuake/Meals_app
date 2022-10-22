@@ -22,7 +22,7 @@ class Osoba(models.Model):
     nazwisko = models.CharField(max_length=200)
     miesiac_urodzenia  = models.IntegerField(choices=Miesiace.choices, default=Miesiace.choices[0])
     data_dodania = models.DateField(default = datetime.now)
-    kraj = models.ForeignKey('Druzyna', on_delete=models.CASCADE, null=True)
+    druzyna = models.ForeignKey('Druzyna', on_delete=models.CASCADE, null=True)
 
     class Meta:
         ordering = ['nazwisko']

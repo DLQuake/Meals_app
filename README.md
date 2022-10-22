@@ -18,5 +18,5 @@ Wykonane zadania:
 * Zadanie 08 - tak ✅
 * Zadanie 09 - tak ✅
 * Zadanie 10 - tak ✅
-* Zadanie 11 - nie ❌
+* Zadanie 11 - tak ✅
 * Zadanie 12 - nie ❌
