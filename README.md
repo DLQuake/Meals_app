@@ -17,6 +17,6 @@ Wykonane zadania:
 * Zadanie 07 - tak ✅
 * Zadanie 08 - tak ✅
 * Zadanie 09 - tak ✅
-* Zadanie 10 - nie ❌
+* Zadanie 10 - tak ✅
 * Zadanie 11 - nie ❌
 * Zadanie 12 - nie ❌
