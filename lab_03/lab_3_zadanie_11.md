@@ -6,7 +6,7 @@
 >>> from osoby.models import Osoba
 >>> Osoba.objects.all()
 
-<QuerySet [<Osoba: Dominik Lewczyński>, <Osoba: Marek Nowak>, <Osoba: Jan kowalski>]>
+<QuerySet [<Osoba: Dominik Lewczyński>, <Osoba: Jan Mazur>, <Osoba: Marek Nowak>]>
 ```
 ## 2. Wyświetl obiekt modelu Osoba z id = 3,
 
@@ -14,7 +14,7 @@
 >>> from osoby.models import Osoba
 >>> Osoba.objects.get(id=3)
 
-<Osoba: Marek Nowak>
+<Osoba: Jan Mazur>
 ```
 
 ## 3. Wyświetl obiekty modelu Osoba, których nazwa rozpoczyna się na wybraną przez Ciebie literę alfabetu (tak, żeby był co najmniej jeden wynik),
@@ -32,7 +32,7 @@
 >>> from osoby.models import Osoba
 >>> Osoba.objects.values('druzyna').order_by('druzyna').distinct()
 
-<QuerySet [{'druzyna': None}, {'druzyna': 1}, {'druzyna': 2}, {'druzyna': 3}]>
+<QuerySet [{'druzyna': 1}, {'druzyna': 2}, {'druzyna': 3}]>
 ```
 
 ## 5. Wyświetl nazwy drużyn posortowane alfabetycznie malejąco,
