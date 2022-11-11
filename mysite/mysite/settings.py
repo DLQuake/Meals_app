@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'osoby',
     'polls',
     'debug_toolbar',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

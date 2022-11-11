@@ -22,7 +22,7 @@ MIESIACE = (
 
 
 class Osoba(models.Model):
-    imie = models.CharField(max_length=200)
+    imie = models.CharField(max_length=200, validators=[RegexValidator('^[a-zA-Z]+$', 'Tylko litery')])
     nazwisko = models.CharField(max_length=200)
     miesiac_urodzenia = models.CharField(max_length=255, choices=MIESIACE, default=date.today().month)
     miesiac_dodania = models.CharField(max_length=255, choices=MIESIACE, default=date.today().month)

@@ -60,6 +60,6 @@ Wykonane zadania:
 * Zadanie 01 - tak ✅
 * Zadanie 02 - tak ✅
 * Zadanie 03 - tak ✅
-* Zadanie 04 - nie ❌
+* Zadanie 04 - tak ✅
 * Zadanie 05 - nie ❌
 * Zadanie 06 - nie ❌
