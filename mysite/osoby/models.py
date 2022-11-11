@@ -1,26 +1,31 @@
 from datetime import datetime
+from datetime import date
 from django.db import models
 from django.core.validators import RegexValidator
 
 # Create your models here.
-class Osoba(models.Model):
-    class Miesiace(models.IntegerChoices):
-        Styczeń = 1
-        Luty = 2
-        Marzec = 3
-        Kwiecień = 4
-        Maj = 5
-        Czerwiec = 6
-        Lipiec = 7
-        Sierpień = 8
-        Wrzesień = 9
-        Październik = 10
-        Listopad = 11
-        Grudzień = 12
 
+MIESIACE = (
+        ('1', 'styczeń'),
+        ('2', 'luty'),
+        ('3', 'marzec'),
+        ('4', 'kwiecień'),
+        ('5', 'maj'),
+        ('6', 'czerwiec'),
+        ('7', 'lipiec'),
+        ('8', 'sierpień'),
+        ('9', 'wrzesień'),
+        ('10', 'październik'),
+        ('11', 'listopad'),
+        ('12', 'grudzień'),
+    )
+
+
+class Osoba(models.Model):
     imie = models.CharField(max_length=200)
     nazwisko = models.CharField(max_length=200)
-    miesiac_urodzenia  = models.IntegerField(choices=Miesiace.choices, default=Miesiace.choices[0])
+    miesiac_urodzenia = models.CharField(max_length=255, choices=MIESIACE, default=date.today().month)
+    miesiac_dodania = models.CharField(max_length=255, choices=MIESIACE, default=date.today().month)
     data_dodania = models.DateField(default = datetime.now)
     druzyna = models.ForeignKey('Druzyna', on_delete=models.CASCADE, null=True)
 
