@@ -63,4 +63,4 @@ Wykonane zadania:
 * Zadanie 04 - tak ✅
 * Zadanie 05 - tak ✅
 * Zadanie 06 - tak ✅
-* Zadanie 07 - nie ❌
+* Zadanie 07 - tak ✅
