@@ -64,3 +64,14 @@ Wykonane zadania:
 * Zadanie 05 - tak ✅
 * Zadanie 06 - tak ✅
 * Zadanie 07 - tak ✅
+
+## lab 06
+
+Wykonane zadania:
+* Zadanie 01 - nie ❌
+* Zadanie 02 - nie ❌
+* Zadanie 03 - nie ❌
+* Zadanie 04 - nie ❌
+* Zadanie 05 - nie ❌
+* Zadanie 06 - nie ❌
+* Zadanie 07 - nie ❌
