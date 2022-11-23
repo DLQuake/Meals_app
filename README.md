@@ -53,3 +53,14 @@ Wykonane zadania:
 * Zadanie 04 - tak ✅
 * Zadanie 05 - tak ✅
 * Zadanie 06 - nie ❌
+
+## lab 05
+
+Wykonane zadania:
+* Zadanie 01 - tak ✅
+* Zadanie 02 - tak ✅
+* Zadanie 03 - tak ✅
+* Zadanie 04 - tak ✅
+* Zadanie 05 - tak ✅
+* Zadanie 06 - tak ✅
+* Zadanie 07 - tak ✅
