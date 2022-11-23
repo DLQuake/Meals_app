@@ -68,10 +68,8 @@ Wykonane zadania:
 ## lab 06
 
 Wykonane zadania:
-* Zadanie 01 - nie ❌
-* Zadanie 02 - nie ❌
-* Zadanie 03 - nie ❌
-* Zadanie 04 - nie ❌
-* Zadanie 05 - nie ❌
-* Zadanie 06 - nie ❌
-* Zadanie 07 - nie ❌
+* Zadanie 01 - tak ✅
+* Zadanie 02 - tak ✅
+* Zadanie 03 - tak ✅
+* Zadanie 04 - tak ✅
+* Zadanie 05 - tak ✅
