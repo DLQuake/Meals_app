@@ -22,12 +22,13 @@ MIESIACE = (
 
 
 class Osoba(models.Model):
+    wlasciciel = models.ForeignKey('auth.User', on_delete=models.CASCADE, null=True)
     imie = models.CharField(max_length=200, validators=[RegexValidator('^[a-zA-Z]+$', 'Tylko litery')])
     nazwisko = models.CharField(max_length=200)
     miesiac_urodzenia = models.CharField(max_length=255, choices=MIESIACE, default=date.today().month)
     miesiac_dodania = models.CharField(max_length=255, choices=MIESIACE, default=date.today().month)
     data_dodania = models.DateField(default = datetime.now)
-    druzyna = models.ForeignKey('Druzyna', on_delete=models.CASCADE, null=True)
+    kraj = models.ForeignKey('Druzyna', on_delete=models.CASCADE, null=True)
 
     class Meta:
         ordering = ['nazwisko']
