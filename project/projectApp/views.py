@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from projectApp.models import Project
 import requests
 from rest_framework import status
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
@@ -36,21 +35,20 @@ def get_meals(request):
 
 def meal_detail(request, id):
     meal = Project.objects.get(id = id)
-    print(meal)
-    return render (
-        request,
-        'meals/meal_detail.html',
-        {'meal': meal}
-    )
+    return render ( request, 'meals/meal_detail.html', {'meal': meal} )
 
 
-@api_view(['GET', 'POST'])
+@api_view(['GET'])
 def meal_list(request):
     if request.method == 'GET':
         meal = Project.objects.all()
         serializer = ProjectSerializer(meal, many=True)
         return Response(serializer.data)
-    elif request.method == 'POST':
+
+
+@api_view(['POST'])
+def add_meal(request):
+    if request.method == 'POST':
         serializer = ProjectSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()

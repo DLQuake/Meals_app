@@ -22,8 +22,3 @@ class ProjectSerializer(serializers.Serializer):
         instance.image_url  = validated_data.get('image_url', instance.image_url)
         instance.save()
         return instance
-
-    def validate_name(self, value):
-        if not value.isalpha():
-            raise serializers.ValidationError("Nazwa musi sie składać tylko z liter!",)
-        return value
