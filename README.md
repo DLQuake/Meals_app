@@ -1,75 +1,18 @@
-# Aplikacje-WWW
-Zajęcia z przedmiotu "Aplikacje WWW"
+# Meals app
 
-## Student
-* Imię i nazwisko: Dominik lewczyński
-* Numer albumu: 155099
+## Table of Contents
+ * [Brief description of the repository](#brief-description-of-the-repository)
+ * [Downloads](#downloads)
 
-## lab 01
+## Brief description of the repository
+This repository contains an application project made with the django rest framework. The application allows you to download food data from an external one located at this address: [LINK](https://www.themealdb.com/)
 
-Wykonane zadania:
-* Zadanie 01 - tak ✅
-* Zadanie 02 - tak ✅
-* Zadanie 03 - tak ✅
-* Zadanie 04 - tak ✅
-* Zadanie 05 - tak ✅
-* Zadanie 06 - tak ✅
+The project uses these external APIs and uses Django rest framework and bootstrap for frontend views
 
-## lab 02
+## Downloads
+There are two ways to download the repository:
 
-Wykonane zadania:
-* Zadanie 01 - tak ✅
-* Zadanie 02 - tak ✅
-* Zadanie 03 - tak ✅
-* Zadanie 04 - tak ✅
-* Zadanie 05 - tak ✅
-* Zadanie 06 - tak ✅
-* Zadanie 07 - tak ✅
-* Zadanie 08 - tak ✅
-* Zadanie 09 - tak ✅
-
-## lab 03
-
-Wykonane zadania:
-* Zadanie 01 - tak ✅
-* Zadanie 02 - tak ✅
-* Zadanie 03 - tak ✅
-* Zadanie 04 - tak ✅
-* Zadanie 05 - tak ✅
-* Zadanie 06 - tak ✅
-* Zadanie 07 - tak ✅
-* Zadanie 08 - tak ✅
-* Zadanie 09 - tak ✅
-* Zadanie 10 - tak ✅
-* Zadanie 11 - tak ✅
-* Zadanie 12 - tak ✅
-
-## lab 04
-
-Wykonane zadania:
-* Zadanie 01 - tak ✅
-* Zadanie 02 - tak ✅
-* Zadanie 03 - tak ✅
-* Zadanie 04 - tak ✅
-* Zadanie 05 - tak ✅
-* Zadanie 06 - nie ❌
-
-## lab 05
-
-Wykonane zadania:
-* Zadanie 01 - tak ✅
-* Zadanie 02 - tak ✅
-* Zadanie 03 - tak ✅
-* Zadanie 04 - tak ✅
-* Zadanie 05 - tak ✅
-* Zadanie 06 - tak ✅
-* Zadanie 07 - tak ✅
-
-## lab 06
-
-Wykonane zadania:
-* Zadanie 01 - tak ✅
-* Zadanie 02 - tak ✅
-* Zadanie 03 - tak ✅
-* Zadanie 04 - tak ✅
-* Zadanie 05 - tak ✅
+* ```bash
+  git clone https://github.com/DLQuake/Meals_app.git
+  ```
+* [Download ZIP](https://github.com/DLQuake/Meals_app/archive/refs/heads/main.zip)
